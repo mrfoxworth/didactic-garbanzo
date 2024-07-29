@@ -1,0 +1,733 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local HUD = Instance.new("ScreenGui")
+local panel = Instance.new("Frame")
+local Frame = Instance.new("Frame")
+local god = Instance.new("TextButton")
+local go = Instance.new("TextLabel")
+local esp = Instance.new("TextButton")
+local es = Instance.new("TextLabel")
+local aim = Instance.new("TextButton")
+local ai = Instance.new("TextLabel")
+local fov = Instance.new("TextButton")
+local f = Instance.new("TextLabel")
+local spi = Instance.new("TextLabel")
+local SPINBOT = Instance.new("TextButton")
+local TextButton = Instance.new("TextButton")
+local label = Instance.new("TextLabel")
+
+--Properties:
+
+HUD.Name = "HUD"
+HUD.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+HUD.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+panel.Name = "panel"
+panel.Parent = HUD
+panel.BackgroundColor3 = Color3.fromRGB(51, 105, 152)
+panel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+panel.BorderSizePixel = 0
+panel.Position = UDim2.new(0.184034422, 0, 0.0640216246, 0)
+panel.Size = UDim2.new(0, 603, 0, 16)
+
+Frame.Parent = panel
+Frame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Frame.BackgroundTransparency = 0.300
+Frame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Frame.BorderSizePixel = 0
+Frame.Position = UDim2.new(0, 0, 1.15400004, -4)
+Frame.Size = UDim2.new(0, 603, 0, 574)
+Frame.ZIndex = 0
+
+god.Name = "god"
+god.Parent = Frame
+god.BackgroundColor3 = Color3.fromRGB(39, 82, 117)
+god.BorderColor3 = Color3.fromRGB(0, 0, 0)
+god.BorderSizePixel = 0
+god.Position = UDim2.new(0.00497512426, 2, 0.0557491295, -26)
+god.Size = UDim2.new(0, 18, 0, 18)
+god.Font = Enum.Font.SourceSansBold
+god.Text = ""
+god.TextColor3 = Color3.fromRGB(85, 181, 255)
+god.TextScaled = true
+god.TextSize = 14.000
+god.TextWrapped = true
+
+go.Name = "go"
+go.Parent = Frame
+go.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+go.BackgroundTransparency = 1.000
+go.BorderColor3 = Color3.fromRGB(0, 0, 0)
+go.BorderSizePixel = 0
+go.Position = UDim2.new(0.0381426215, 0, 0.0104529615, 0)
+go.Size = UDim2.new(0, 54, 0, 18)
+go.Font = Enum.Font.SourceSans
+go.Text = "GodMode"
+go.TextColor3 = Color3.fromRGB(255, 255, 255)
+go.TextSize = 14.000
+
+esp.Name = "esp"
+esp.Parent = Frame
+esp.BackgroundColor3 = Color3.fromRGB(39, 82, 117)
+esp.BorderColor3 = Color3.fromRGB(0, 0, 0)
+esp.BorderSizePixel = 0
+esp.Position = UDim2.new(0.00497512426, 2, 0.087108016, -22)
+esp.Size = UDim2.new(0, 18, 0, 17)
+esp.Font = Enum.Font.SourceSansBold
+esp.Text = ""
+esp.TextColor3 = Color3.fromRGB(85, 181, 255)
+esp.TextScaled = true
+esp.TextSize = 14.000
+esp.TextWrapped = true
+
+es.Name = "es"
+es.Parent = Frame
+es.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+es.BackgroundTransparency = 1.000
+es.BorderColor3 = Color3.fromRGB(0, 0, 0)
+es.BorderSizePixel = 0
+es.Position = UDim2.new(0.043117743, -1, 0.043554008, 2)
+es.Size = UDim2.new(0, 47, 0, 18)
+es.Font = Enum.Font.SourceSans
+es.Text = "Gay ESP"
+es.TextColor3 = Color3.fromRGB(255, 255, 255)
+es.TextSize = 14.000
+
+aim.Name = "aim"
+aim.Parent = Frame
+aim.BackgroundColor3 = Color3.fromRGB(39, 82, 117)
+aim.BorderColor3 = Color3.fromRGB(0, 0, 0)
+aim.BorderSizePixel = 0
+aim.Position = UDim2.new(0.00497512426, 2, 0.118466899, -19)
+aim.Size = UDim2.new(0, 18, 0, 17)
+aim.Font = Enum.Font.SourceSansBold
+aim.Text = ""
+aim.TextColor3 = Color3.fromRGB(85, 181, 255)
+aim.TextScaled = true
+aim.TextSize = 14.000
+aim.TextWrapped = true
+
+ai.Name = "ai"
+ai.Parent = Frame
+ai.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ai.BackgroundTransparency = 1.000
+ai.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ai.BorderSizePixel = 0
+ai.Position = UDim2.new(0.043117743, -1, 0.0749128908, 5)
+ai.Size = UDim2.new(0, 41, 0, 18)
+ai.Font = Enum.Font.SourceSans
+ai.Text = "AimBot"
+ai.TextColor3 = Color3.fromRGB(255, 255, 255)
+ai.TextSize = 14.000
+
+fov.Name = "fov"
+fov.Parent = Frame
+fov.BackgroundColor3 = Color3.fromRGB(39, 82, 117)
+fov.BorderColor3 = Color3.fromRGB(0, 0, 0)
+fov.BorderSizePixel = 0
+fov.Position = UDim2.new(0.00497512426, 2, 0.149825782, -16)
+fov.Size = UDim2.new(0, 18, 0, 17)
+fov.Font = Enum.Font.SourceSansBold
+fov.Text = ""
+fov.TextColor3 = Color3.fromRGB(85, 181, 255)
+fov.TextScaled = true
+fov.TextSize = 14.000
+fov.TextWrapped = true
+
+f.Name = "f"
+f.Parent = Frame
+f.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+f.BackgroundTransparency = 1.000
+f.BorderColor3 = Color3.fromRGB(0, 0, 0)
+f.BorderSizePixel = 0
+f.Position = UDim2.new(0.043117743, 5, 0.106271774, 8)
+f.Size = UDim2.new(0, 41, 0, 18)
+f.Font = Enum.Font.SourceSans
+f.Text = "FOV Circle"
+f.TextColor3 = Color3.fromRGB(255, 255, 255)
+f.TextSize = 14.000
+
+spi.Name = "spi"
+spi.Parent = Frame
+spi.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+spi.BackgroundTransparency = 1.000
+spi.BorderColor3 = Color3.fromRGB(0, 0, 0)
+spi.BorderSizePixel = 0
+spi.Position = UDim2.new(0.043117743, -1, 0.137630656, 11)
+spi.Size = UDim2.new(0, 113, 0, 18)
+spi.Font = Enum.Font.SourceSans
+spi.Text = "SpinBot (Third Person)"
+spi.TextColor3 = Color3.fromRGB(255, 255, 255)
+spi.TextSize = 14.000
+
+SPINBOT.Name = "SPINBOT"
+SPINBOT.Parent = Frame
+SPINBOT.BackgroundColor3 = Color3.fromRGB(39, 82, 117)
+SPINBOT.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SPINBOT.BorderSizePixel = 0
+SPINBOT.Position = UDim2.new(0.00497512426, 2, 0.181184664, -13)
+SPINBOT.Size = UDim2.new(0, 18, 0, 17)
+SPINBOT.Font = Enum.Font.SourceSansBold
+SPINBOT.Text = ""
+SPINBOT.TextColor3 = Color3.fromRGB(85, 181, 255)
+SPINBOT.TextScaled = true
+SPINBOT.TextSize = 14.000
+SPINBOT.TextWrapped = true
+
+TextButton.Parent = Frame
+TextButton.BackgroundColor3 = Color3.fromRGB(51, 105, 152)
+TextButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.BorderSizePixel = 0
+TextButton.Position = UDim2.new(-0.00331674959, 7, 0.195121944, -1)
+TextButton.Size = UDim2.new(0, 74, 0, 15)
+TextButton.Font = Enum.Font.SourceSans
+TextButton.Text = "Secret Exploits"
+TextButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton.TextScaled = true
+TextButton.TextSize = 14.000
+TextButton.TextWrapped = true
+
+label.Name = "label"
+label.Parent = panel
+label.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+label.BackgroundTransparency = 1.000
+label.BorderColor3 = Color3.fromRGB(0, 0, 0)
+label.BorderSizePixel = 0
+label.Position = UDim2.new(0.000718224153, 3, -2.38418579e-07, 1)
+label.Size = UDim2.new(0, 149, 0, 13)
+label.Font = Enum.Font.SourceSans
+label.Text = "FoxWare.exe"
+label.TextColor3 = Color3.fromRGB(255, 255, 255)
+label.TextSize = 14.000
+label.TextXAlignment = Enum.TextXAlignment.Left
+
+-- Scripts:
+
+local function BNRVAVJ_fake_script() -- god.LocalScript 
+	local script = Instance.new('LocalScript', god)
+
+	-- Get a reference to the TextButton
+	local textButton = script.Parent
+	
+	-- Define a variable for the new text
+	local newText = "✓"
+	
+	-- Define a function that changes the button's text
+	local function onButtonClick()
+		textButton.Text = newText
+	end
+	
+	-- Connect the function to the MouseButton1Click event of the TextButton
+	textButton.MouseButton1Click:Connect(onButtonClick)
+	
+end
+coroutine.wrap(BNRVAVJ_fake_script)()
+local function ROIZK_fake_script() -- god.LocalScript 
+	local script = Instance.new('LocalScript', god)
+
+	god.MouseButton1Down:connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/zephyr10101/ignore-touchinterests/main/main",true))()
+	end)
+	
+end
+coroutine.wrap(ROIZK_fake_script)()
+local function OXAOGFF_fake_script() -- esp.LocalScript 
+	local script = Instance.new('LocalScript', esp)
+
+	-- Get a reference to the TextButton
+	local textButton = script.Parent
+	
+	-- Define a variable for the new text
+	local newText = "✓"
+	
+	-- Define a function that changes the button's text
+	local function onButtonClick()
+		textButton.Text = newText
+	end
+	
+	-- Connect the function to the MouseButton1Click event of the TextButton
+	textButton.MouseButton1Click:Connect(onButtonClick)
+	
+end
+coroutine.wrap(OXAOGFF_fake_script)()
+local function LURH_fake_script() -- esp.LocalScript 
+	local script = Instance.new('LocalScript', esp)
+
+	esp.MouseButton1Down:connect(function()
+		local FillColor = Color3.fromRGB(175,25,255)
+		local DepthMode = "AlwaysOnTop"
+		local FillTransparency = 0.5
+		local OutlineColor = Color3.fromRGB(255,255,255)
+		local OutlineTransparency = 0
+	
+		local CoreGui = game:FindService("CoreGui")
+		local Players = game:FindService("Players")
+		local lp = Players.LocalPlayer
+		local connections = {}
+	
+		local Storage = Instance.new("Folder")
+		Storage.Parent = CoreGui
+		Storage.Name = "Highlight_Storage"
+	
+		local function Highlight(plr)
+			local Highlight = Instance.new("Highlight")
+			Highlight.Name = plr.Name
+			Highlight.FillColor = FillColor
+			Highlight.DepthMode = DepthMode
+			Highlight.FillTransparency = FillTransparency
+			Highlight.OutlineColor = OutlineColor
+			Highlight.OutlineTransparency = 0
+			Highlight.Parent = Storage
+	
+			local plrchar = plr.Character
+			if plrchar then
+				Highlight.Adornee = plrchar
+			end
+	
+			connections[plr] = plr.CharacterAdded:Connect(function(char)
+				Highlight.Adornee = char
+			end)
+		end
+	
+		Players.PlayerAdded:Connect(Highlight)
+		for i,v in next, Players:GetPlayers() do
+			Highlight(v)
+		end
+	
+		Players.PlayerRemoving:Connect(function(plr)
+			local plrname = plr.Name
+			if Storage[plrname] then
+				Storage[plrname]:Destroy()
+			end
+			if connections[plr] then
+				connections[plr]:Disconnect()
+			end
+		end)
+	end)
+	
+end
+coroutine.wrap(LURH_fake_script)()
+local function QZMN_fake_script() -- aim.LocalScript 
+	local script = Instance.new('LocalScript', aim)
+
+	-- Get a reference to the TextButton
+	local textButton = script.Parent
+	
+	-- Define a variable for the new text
+	local newText = "✓"
+	
+	-- Define a function that changes the button's text
+	local function onButtonClick()
+		textButton.Text = newText
+	end
+	
+	-- Connect the function to the MouseButton1Click event of the TextButton
+	textButton.MouseButton1Click:Connect(onButtonClick)
+	
+end
+coroutine.wrap(QZMN_fake_script)()
+local function EOKD_fake_script() -- aim.LocalScript 
+	local script = Instance.new('LocalScript', aim)
+
+	aim.MouseButton1Down:connect(function()
+	
+		local select = select
+		local pcall, getgenv, next, Vector2, mathclamp, type, mousemoverel = select(1, pcall, getgenv, next, Vector2.new, math.clamp, type, mousemoverel or (Input and Input.MouseMove))
+	
+		--// Preventing Multiple Processes
+	
+		pcall(function()
+			getgenv().Aimbot.Functions:Exit()
+		end)
+	
+		--// Environment
+	
+		getgenv().Aimbot = {}
+		local Environment = getgenv().Aimbot
+	
+		--// Services
+	
+		local RunService = game:GetService("RunService")
+		local UserInputService = game:GetService("UserInputService")
+		local TweenService = game:GetService("TweenService")
+		local Players = game:GetService("Players")
+		local Camera = workspace.CurrentCamera
+		local LocalPlayer = Players.LocalPlayer
+	
+		--// Variables
+	
+		local RequiredDistance, Typing, Running, Animation, ServiceConnections = 2000, false, false, nil, {}
+	
+		--// Script Settings
+	
+		Environment.Settings = {
+			Enabled = true,
+			TeamCheck = false,
+			AliveCheck = true,
+			WallCheck = false, -- Laggy
+			Sensitivity = 0, -- Animation length (in seconds) before fully locking onto target
+			ThirdPerson = false, -- Uses mousemoverel instead of CFrame to support locking in third person (could be choppy)
+			ThirdPersonSensitivity = 3, -- Boundary: 0.1 - 5
+			TriggerKey = "MouseButton2",
+			Toggle = false,
+			LockPart = "Head" -- Body part to lock on
+		}
+	
+		Environment.FOVSettings = {
+			Enabled = true,
+			Visible = false,
+			Amount = 90,
+			Color = Color3.fromRGB(255, 255, 255),
+			LockedColor = Color3.fromRGB(255, 70, 70),
+			Transparency = 0.5,
+			Sides = 60,
+			Thickness = 1,
+			Filled = false
+		}
+	
+		Environment.FOVCircle = Drawing.new("Circle")
+	
+		--// Functions
+	
+		local function CancelLock()
+			Environment.Locked = nil
+			if Animation then Animation:Cancel() end
+			Environment.FOVCircle.Color = Environment.FOVSettings.Color
+		end
+	
+		local function GetClosestPlayer()
+			if not Environment.Locked then
+				RequiredDistance = (Environment.FOVSettings.Enabled and Environment.FOVSettings.Amount or 2000)
+	
+				for _, v in next, Players:GetPlayers() do
+					if v ~= LocalPlayer then
+						if v.Character and v.Character:FindFirstChild(Environment.Settings.LockPart) and v.Character:FindFirstChildOfClass("Humanoid") then
+							if Environment.Settings.TeamCheck and v.Team == LocalPlayer.Team then continue end
+							if Environment.Settings.AliveCheck and v.Character:FindFirstChildOfClass("Humanoid").Health <= 0 then continue end
+							if Environment.Settings.WallCheck and #(Camera:GetPartsObscuringTarget({v.Character[Environment.Settings.LockPart].Position}, v.Character:GetDescendants())) > 0 then continue end
+	
+							local Vector, OnScreen = Camera:WorldToViewportPoint(v.Character[Environment.Settings.LockPart].Position)
+							local Distance = (Vector2(UserInputService:GetMouseLocation().X, UserInputService:GetMouseLocation().Y) - Vector2(Vector.X, Vector.Y)).Magnitude
+	
+							if Distance < RequiredDistance and OnScreen then
+								RequiredDistance = Distance
+								Environment.Locked = v
+							end
+						end
+					end
+				end
+			elseif (Vector2(UserInputService:GetMouseLocation().X, UserInputService:GetMouseLocation().Y) - Vector2(Camera:WorldToViewportPoint(Environment.Locked.Character[Environment.Settings.LockPart].Position).X, Camera:WorldToViewportPoint(Environment.Locked.Character[Environment.Settings.LockPart].Position).Y)).Magnitude > RequiredDistance then
+				CancelLock()
+			end
+		end
+	
+		--// Typing Check
+	
+		ServiceConnections.TypingStartedConnection = UserInputService.TextBoxFocused:Connect(function()
+			Typing = true
+		end)
+	
+		ServiceConnections.TypingEndedConnection = UserInputService.TextBoxFocusReleased:Connect(function()
+			Typing = false
+		end)
+	
+		--// Main
+	
+		local function Load()
+			ServiceConnections.RenderSteppedConnection = RunService.RenderStepped:Connect(function()
+				if Environment.FOVSettings.Enabled and Environment.Settings.Enabled then
+					Environment.FOVCircle.Radius = Environment.FOVSettings.Amount
+					Environment.FOVCircle.Thickness = Environment.FOVSettings.Thickness
+					Environment.FOVCircle.Filled = Environment.FOVSettings.Filled
+					Environment.FOVCircle.NumSides = Environment.FOVSettings.Sides
+					Environment.FOVCircle.Color = Environment.FOVSettings.Color
+					Environment.FOVCircle.Transparency = Environment.FOVSettings.Transparency
+					Environment.FOVCircle.Visible = Environment.FOVSettings.Visible
+					Environment.FOVCircle.Position = Vector2(UserInputService:GetMouseLocation().X, UserInputService:GetMouseLocation().Y)
+				else
+					Environment.FOVCircle.Visible = false
+				end
+	
+				if Running and Environment.Settings.Enabled then
+					GetClosestPlayer()
+	
+					if Environment.Locked then
+						if Environment.Settings.ThirdPerson then
+							Environment.Settings.ThirdPersonSensitivity = mathclamp(Environment.Settings.ThirdPersonSensitivity, 0.1, 5)
+	
+							local Vector = Camera:WorldToViewportPoint(Environment.Locked.Character[Environment.Settings.LockPart].Position)
+							mousemoverel((Vector.X - UserInputService:GetMouseLocation().X) * Environment.Settings.ThirdPersonSensitivity, (Vector.Y - UserInputService:GetMouseLocation().Y) * Environment.Settings.ThirdPersonSensitivity)
+						else
+							if Environment.Settings.Sensitivity > 0 then
+								Animation = TweenService:Create(Camera, TweenInfo.new(Environment.Settings.Sensitivity, Enum.EasingStyle.Sine, Enum.EasingDirection.Out), {CFrame = CFrame.new(Camera.CFrame.Position, Environment.Locked.Character[Environment.Settings.LockPart].Position)})
+								Animation:Play()
+							else
+								Camera.CFrame = CFrame.new(Camera.CFrame.Position, Environment.Locked.Character[Environment.Settings.LockPart].Position)
+							end
+						end
+	
+						Environment.FOVCircle.Color = Environment.FOVSettings.LockedColor
+	
+					end
+				end
+			end)
+	
+			ServiceConnections.InputBeganConnection = UserInputService.InputBegan:Connect(function(Input)
+				if not Typing then
+					pcall(function()
+						if Input.KeyCode == Enum.KeyCode[Environment.Settings.TriggerKey] then
+							if Environment.Settings.Toggle then
+								Running = not Running
+	
+								if not Running then
+									CancelLock()
+								end
+							else
+								Running = true
+							end
+						end
+					end)
+	
+					pcall(function()
+						if Input.UserInputType == Enum.UserInputType[Environment.Settings.TriggerKey] then
+							if Environment.Settings.Toggle then
+								Running = not Running
+	
+								if not Running then
+									CancelLock()
+								end
+							else
+								Running = true
+							end
+						end
+					end)
+				end
+			end)
+	
+			ServiceConnections.InputEndedConnection = UserInputService.InputEnded:Connect(function(Input)
+				if not Typing then
+					if not Environment.Settings.Toggle then
+						pcall(function()
+							if Input.KeyCode == Enum.KeyCode[Environment.Settings.TriggerKey] then
+								Running = false; CancelLock()
+							end
+						end)
+	
+						pcall(function()
+							if Input.UserInputType == Enum.UserInputType[Environment.Settings.TriggerKey] then
+								Running = false; CancelLock()
+							end
+						end)
+					end
+				end
+			end)
+		end
+	
+		--// Functions
+	
+		Environment.Functions = {}
+	
+		function Environment.Functions:Exit()
+			for _, v in next, ServiceConnections do
+				v:Disconnect()
+			end
+	
+			if Environment.FOVCircle.Remove then Environment.FOVCircle:Remove() end
+	
+			getgenv().Aimbot.Functions = nil
+			getgenv().Aimbot = nil
+	
+			Load = nil; GetClosestPlayer = nil; CancelLock = nil
+		end
+	
+		function Environment.Functions:Restart()
+			for _, v in next, ServiceConnections do
+				v:Disconnect()
+			end
+	
+			Load()
+		end
+	
+		function Environment.Functions:ResetSettings()
+			Environment.Settings = {
+				Enabled = true,
+				TeamCheck = false,
+				AliveCheck = true,
+				WallCheck = true,
+				Sensitivity = 0, -- Animation length (in seconds) before fully locking onto target
+				ThirdPerson = false, -- Uses mousemoverel instead of CFrame to support locking in third person (could be choppy)
+				ThirdPersonSensitivity = 3, -- Boundary: 0.1 - 5
+				TriggerKey = "MouseButton2",
+				Toggle = false,
+				LockPart = "Head" -- Body part to lock on
+			}
+	
+			Environment.FOVSettings = {
+				Enabled = true,
+				Visible = false,
+				Amount = 80,
+				Color = Color3.fromRGB(255, 255, 255),
+				LockedColor = Color3.fromRGB(255, 70, 70),
+				Transparency = 0.5,
+				Sides = 60,
+				Thickness = 1.5,
+				Filled = false
+			}
+		end
+	
+		--// Load
+	
+		Load()
+	end)
+	
+end
+coroutine.wrap(EOKD_fake_script)()
+local function HZOGO_fake_script() -- fov.LocalScript 
+	local script = Instance.new('LocalScript', fov)
+
+	-- Get a reference to the TextButton
+	local textButton = script.Parent
+	
+	-- Define a variable for the new text
+	local newText = "✓"
+	
+	-- Define a function that changes the button's text
+	local function onButtonClick()
+		textButton.Text = newText
+	end
+	
+	-- Connect the function to the MouseButton1Click event of the TextButton
+	textButton.MouseButton1Click:Connect(onButtonClick)
+	
+end
+coroutine.wrap(HZOGO_fake_script)()
+local function KMEQIF_fake_script() -- fov.LocalScript 
+	local script = Instance.new('LocalScript', fov)
+
+	fov.MouseButton1Down:connect(function()
+		local teamCheck = false
+		local fov = 80
+		local smoothing = 1
+	
+		local RunService = game:GetService("RunService")
+	
+		local FOVring = Drawing.new("Circle")
+		FOVring.Visible = true
+		FOVring.Thickness = 1.5
+		FOVring.Radius = fov
+		FOVring.Transparency = 0.7
+		FOVring.Color = Color3.fromRGB(255, 128, 128)
+		FOVring.Position = workspace.CurrentCamera.ViewportSize/2
+	end)
+end
+coroutine.wrap(KMEQIF_fake_script)()
+local function WLFTUY_fake_script() -- SPINBOT.LocalScript 
+	local script = Instance.new('LocalScript', SPINBOT)
+
+	-- Get a reference to the TextButton
+	local textButton = script.Parent
+	
+	-- Define a variable for the new text
+	local newText = "✓"
+	
+	-- Define a function that changes the button's text
+	local function onButtonClick()
+		textButton.Text = newText
+	end
+	
+	-- Connect the function to the MouseButton1Click event of the TextButton
+	textButton.MouseButton1Click:Connect(onButtonClick)
+	
+end
+coroutine.wrap(WLFTUY_fake_script)()
+local function SSZUMD_fake_script() -- SPINBOT.LocalScript 
+	local script = Instance.new('LocalScript', SPINBOT)
+
+	SPINBOT.MouseButton1Down:connect(function()
+		local teamCheck = false
+		local fov = 80
+		local smoothing = 1
+	
+		local RunService = game:GetService("RunService")
+	
+		local FOVring = Drawing.new("Circle")
+		FOVring.Visible = true
+		FOVring.Thickness = 1.5
+		FOVring.Radius = fov
+		FOVring.Transparency = 0.7
+		FOVring.Color = Color3.fromRGB(255, 128, 128)
+		FOVring.Position = workspace.CurrentCamera.ViewportSize/2
+	end)
+end
+coroutine.wrap(SSZUMD_fake_script)()
+local function RMVBXK_fake_script() -- panel.LocalScript 
+	local script = Instance.new('LocalScript', panel)
+
+	local UIS = game:GetService("UserInputService")
+	function dragify(Frame)
+		dragToggle = nil
+		local dragSpeed = 0
+		dragInput = nil
+		dragStart = nil
+		local dragPos = nil
+		function updateInput(input)
+			local Delta = input.Position - dragStart
+			local Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + Delta.X, startPos.Y.Scale, startPos.Y.Offset + Delta.Y)
+			game:GetService("TweenService"):Create(Frame, TweenInfo.new(0.25), {Position = Position}):Play()
+		end
+		Frame.InputBegan:Connect(function(input)
+			if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) and UIS:GetFocusedTextBox() == nil then
+				dragToggle = true
+				dragStart = input.Position
+				startPos = Frame.Position
+				input.Changed:Connect(function()
+					if input.UserInputState == Enum.UserInputState.End then
+						dragToggle = false
+					end
+				end)
+			end
+		end)
+		Frame.InputChanged:Connect(function(input)
+			if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+				dragInput = input
+			end
+		end)
+		game:GetService("UserInputService").InputChanged:Connect(function(input)
+			if input == dragInput and dragToggle then
+				updateInput(input)
+			end
+		end)
+	end
+	
+	dragify(script.Parent)
+end
+coroutine.wrap(RMVBXK_fake_script)()
+local function OPAV_fake_script() -- panel.LocalScript 
+	local script = Instance.new('LocalScript', panel)
+
+	local frame = script.Parent.Parent.panel --in the .frame - you should need to change it what is your frame name.
+	local hotkey = Enum.KeyCode.RightAlt --Change your keybind you want.
+	
+	local UIS = game:GetService("UserInputService")
+	local open = false
+	
+	
+	
+	UIS.InputBegan:Connect(function(key, gp)
+		if key.KeyCode == hotkey then
+			if UIS:GetFocusedTextBox() == nil then
+				if open == false then
+					open = true 
+					frame.Visible = open
+				elseif open == true then
+					open = false
+					frame.Visible = open
+				end
+			end
+		end
+	end)
+end
+coroutine.wrap(OPAV_fake_script)()
