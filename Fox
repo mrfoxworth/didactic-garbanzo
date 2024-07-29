@@ -208,7 +208,7 @@ Frame.Parent = FOX
 Frame.BackgroundColor3 = Color3.fromRGB(44, 91, 129)
 Frame.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Frame.BorderSizePixel = 0
-Frame.Position = UDim2.new(1.01488018, 0, -0.0681648254, 0)
+Frame.Position = UDim2.new(1.01488018, 0, -0.0263529792, 0)
 Frame.Size = UDim2.new(0, 603, 0, 16)
 Frame.Visible = false
 
@@ -372,7 +372,7 @@ label_2.TextXAlignment = Enum.TextXAlignment.Left
 
 -- Scripts:
 
-local function BTNZZV_fake_script() -- god.LocalScript 
+local function IVUUENL_fake_script() -- god.LocalScript 
 	local script = Instance.new('LocalScript', god)
 
 	-- Get a reference to the TextButton
@@ -390,8 +390,8 @@ local function BTNZZV_fake_script() -- god.LocalScript
 	textButton.MouseButton1Click:Connect(onButtonClick)
 	
 end
-coroutine.wrap(BTNZZV_fake_script)()
-local function CVNAZH_fake_script() -- god.LocalScript 
+coroutine.wrap(IVUUENL_fake_script)()
+local function DPJD_fake_script() -- god.LocalScript 
 	local script = Instance.new('LocalScript', god)
 
 	god.MouseButton1Down:connect(function()
@@ -399,8 +399,8 @@ local function CVNAZH_fake_script() -- god.LocalScript
 	end)
 	
 end
-coroutine.wrap(CVNAZH_fake_script)()
-local function MHDXK_fake_script() -- esp.LocalScript 
+coroutine.wrap(DPJD_fake_script)()
+local function FDQKZXQ_fake_script() -- esp.LocalScript 
 	local script = Instance.new('LocalScript', esp)
 
 	-- Get a reference to the TextButton
@@ -418,8 +418,8 @@ local function MHDXK_fake_script() -- esp.LocalScript
 	textButton.MouseButton1Click:Connect(onButtonClick)
 	
 end
-coroutine.wrap(MHDXK_fake_script)()
-local function ZLTW_fake_script() -- esp.LocalScript 
+coroutine.wrap(FDQKZXQ_fake_script)()
+local function KYHHE_fake_script() -- esp.LocalScript 
 	local script = Instance.new('LocalScript', esp)
 
 	esp.MouseButton1Down:connect(function()
@@ -475,8 +475,8 @@ local function ZLTW_fake_script() -- esp.LocalScript
 	end)
 	
 end
-coroutine.wrap(ZLTW_fake_script)()
-local function CEGPG_fake_script() -- aim.LocalScript 
+coroutine.wrap(KYHHE_fake_script)()
+local function UNHNA_fake_script() -- aim.LocalScript 
 	local script = Instance.new('LocalScript', aim)
 
 	-- Get a reference to the TextButton
@@ -494,8 +494,8 @@ local function CEGPG_fake_script() -- aim.LocalScript
 	textButton.MouseButton1Click:Connect(onButtonClick)
 	
 end
-coroutine.wrap(CEGPG_fake_script)()
-local function BSLCN_fake_script() -- aim.LocalScript 
+coroutine.wrap(UNHNA_fake_script)()
+local function ZLCXVBE_fake_script() -- aim.LocalScript 
 	local script = Instance.new('LocalScript', aim)
 
 	aim.MouseButton1Down:connect(function()
@@ -750,8 +750,8 @@ local function BSLCN_fake_script() -- aim.LocalScript
 	end)
 	
 end
-coroutine.wrap(BSLCN_fake_script)()
-local function MMHKVD_fake_script() -- fov.LocalScript 
+coroutine.wrap(ZLCXVBE_fake_script)()
+local function WWGUL_fake_script() -- fov.LocalScript 
 	local script = Instance.new('LocalScript', fov)
 
 	-- Get a reference to the TextButton
@@ -769,8 +769,8 @@ local function MMHKVD_fake_script() -- fov.LocalScript
 	textButton.MouseButton1Click:Connect(onButtonClick)
 	
 end
-coroutine.wrap(MMHKVD_fake_script)()
-local function LRMEVQ_fake_script() -- fov.LocalScript 
+coroutine.wrap(WWGUL_fake_script)()
+local function QYNPP_fake_script() -- fov.LocalScript 
 	local script = Instance.new('LocalScript', fov)
 
 	fov.MouseButton1Down:connect(function()
@@ -789,8 +789,8 @@ local function LRMEVQ_fake_script() -- fov.LocalScript
 		FOVring.Position = workspace.CurrentCamera.ViewportSize/2
 	end)
 end
-coroutine.wrap(LRMEVQ_fake_script)()
-local function UQINTD_fake_script() -- SPINBOT.LocalScript 
+coroutine.wrap(QYNPP_fake_script)()
+local function FQVM_fake_script() -- SPINBOT.LocalScript 
 	local script = Instance.new('LocalScript', SPINBOT)
 
 	-- Get a reference to the TextButton
@@ -808,8 +808,8 @@ local function UQINTD_fake_script() -- SPINBOT.LocalScript
 	textButton.MouseButton1Click:Connect(onButtonClick)
 	
 end
-coroutine.wrap(UQINTD_fake_script)()
-local function ANQU_fake_script() -- SPINBOT.LocalScript 
+coroutine.wrap(FQVM_fake_script)()
+local function NIKCG_fake_script() -- SPINBOT.LocalScript 
 	local script = Instance.new('LocalScript', SPINBOT)
 
 	SPINBOT.MouseButton1Down:connect(function()
@@ -828,8 +828,8 @@ local function ANQU_fake_script() -- SPINBOT.LocalScript
 		FOVring.Position = workspace.CurrentCamera.ViewportSize/2
 	end)
 end
-coroutine.wrap(ANQU_fake_script)()
-local function LLZW_fake_script() -- TextButton.LocalScript 
+coroutine.wrap(NIKCG_fake_script)()
+local function OKJF_fake_script() -- TextButton.LocalScript 
 	local script = Instance.new('LocalScript', TextButton)
 
 	local frame = script.Parent.Parent.Frame
@@ -838,8 +838,8 @@ local function LLZW_fake_script() -- TextButton.LocalScript
 		frame.Visible = true
 	end)
 end
-coroutine.wrap(LLZW_fake_script)()
-local function HBVZN_fake_script() -- inf.LocalScript 
+coroutine.wrap(OKJF_fake_script)()
+local function PEELSR_fake_script() -- inf.LocalScript 
 	local script = Instance.new('LocalScript', inf)
 
 	-- Get a reference to the TextButton
@@ -857,16 +857,16 @@ local function HBVZN_fake_script() -- inf.LocalScript
 	textButton.MouseButton1Click:Connect(onButtonClick)
 	
 end
-coroutine.wrap(HBVZN_fake_script)()
-local function GZROG_fake_script() -- inf.LocalScript 
+coroutine.wrap(PEELSR_fake_script)()
+local function QXGBLS_fake_script() -- inf.LocalScript 
 	local script = Instance.new('LocalScript', inf)
 
 	inf.MouseButton1Down:connect(function()
 		loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
 	end)
 end
-coroutine.wrap(GZROG_fake_script)()
-local function VVRXD_fake_script() -- R6.LocalScript 
+coroutine.wrap(QXGBLS_fake_script)()
+local function RZCGMT_fake_script() -- R6.LocalScript 
 	local script = Instance.new('LocalScript', R6)
 
 	-- Get a reference to the TextButton
@@ -884,8 +884,8 @@ local function VVRXD_fake_script() -- R6.LocalScript
 	textButton.MouseButton1Click:Connect(onButtonClick)
 	
 end
-coroutine.wrap(VVRXD_fake_script)()
-local function BKPT_fake_script() -- R6.LocalScript 
+coroutine.wrap(RZCGMT_fake_script)()
+local function LYQCHPT_fake_script() -- R6.LocalScript 
 	local script = Instance.new('LocalScript', R6)
 
 	R6.MouseButton1Down:connect(function()
@@ -893,8 +893,8 @@ local function BKPT_fake_script() -- R6.LocalScript
 	end)
 	
 end
-coroutine.wrap(BKPT_fake_script)()
-local function FVZOVN_fake_script() -- freecam.LocalScript 
+coroutine.wrap(LYQCHPT_fake_script)()
+local function VHGLADW_fake_script() -- freecam.LocalScript 
 	local script = Instance.new('LocalScript', freecam)
 
 	-- Get a reference to the TextButton
@@ -912,16 +912,16 @@ local function FVZOVN_fake_script() -- freecam.LocalScript
 	textButton.MouseButton1Click:Connect(onButtonClick)
 	
 end
-coroutine.wrap(FVZOVN_fake_script)()
-local function CBVM_fake_script() -- freecam.LocalScript 
+coroutine.wrap(VHGLADW_fake_script)()
+local function OYWCI_fake_script() -- freecam.LocalScript 
 	local script = Instance.new('LocalScript', freecam)
 
 	freecam.MouseButton1Down:connect(function()
 		loadstring(game:HttpGet("https://pastebin.com/raw/yJ51HKy9",true))()
 	end)
 end
-coroutine.wrap(CBVM_fake_script)()
-local function IGIF_fake_script() -- t.LocalScript 
+coroutine.wrap(OYWCI_fake_script)()
+local function XZXH_fake_script() -- t.LocalScript 
 	local script = Instance.new('LocalScript', t)
 
 	-- Get a reference to the TextButton
@@ -939,8 +939,8 @@ local function IGIF_fake_script() -- t.LocalScript
 	textButton.MouseButton1Click:Connect(onButtonClick)
 	
 end
-coroutine.wrap(IGIF_fake_script)()
-local function EKPGWKD_fake_script() -- t.LocalScript 
+coroutine.wrap(XZXH_fake_script)()
+local function NBETH_fake_script() -- t.LocalScript 
 	local script = Instance.new('LocalScript', t)
 
 	t.MouseButton1Down:connect(function()
@@ -948,8 +948,8 @@ local function EKPGWKD_fake_script() -- t.LocalScript
 	end)
 	
 end
-coroutine.wrap(EKPGWKD_fake_script)()
-local function HKFFLP_fake_script() -- Frame.LocalScript 
+coroutine.wrap(NBETH_fake_script)()
+local function RCZYDMR_fake_script() -- Frame.LocalScript 
 	local script = Instance.new('LocalScript', Frame)
 
 	local UIS = game:GetService("UserInputService")
@@ -990,34 +990,8 @@ local function HKFFLP_fake_script() -- Frame.LocalScript
 	
 	dragify(script.Parent)
 end
-coroutine.wrap(HKFFLP_fake_script)()
-local function TOVBLPV_fake_script() -- Frame.LocalScript 
-	local script = Instance.new('LocalScript', Frame)
-
-	local frame = script.Parent.Parent.Frame --in the .frame - you should need to change it what is your frame name.
-	local hotkey = Enum.KeyCode.RightAlt --Change your keybind you want.
-	
-	local UIS = game:GetService("UserInputService")
-	local open = false
-	
-	
-	
-	UIS.InputBegan:Connect(function(key, gp)
-		if key.KeyCode == hotkey then
-			if UIS:GetFocusedTextBox() == nil then
-				if open == false then
-					open = true 
-					frame.Visible = open
-				elseif open == true then
-					open = false
-					frame.Visible = open
-				end
-			end
-		end
-	end)
-end
-coroutine.wrap(TOVBLPV_fake_script)()
-local function YXUE_fake_script() -- TextButton_2.LocalScript 
+coroutine.wrap(RCZYDMR_fake_script)()
+local function USNKHB_fake_script() -- TextButton_2.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_2)
 
 	local frame = script.Parent.Parent
@@ -1026,8 +1000,8 @@ local function YXUE_fake_script() -- TextButton_2.LocalScript
 		frame.Visible = false
 	end)
 end
-coroutine.wrap(YXUE_fake_script)()
-local function FYKSNC_fake_script() -- panel.LocalScript 
+coroutine.wrap(USNKHB_fake_script)()
+local function BCQEUXF_fake_script() -- panel.LocalScript 
 	local script = Instance.new('LocalScript', panel)
 
 	local UIS = game:GetService("UserInputService")
@@ -1068,8 +1042,8 @@ local function FYKSNC_fake_script() -- panel.LocalScript
 	
 	dragify(script.Parent)
 end
-coroutine.wrap(FYKSNC_fake_script)()
-local function CIRY_fake_script() -- panel.LocalScript 
+coroutine.wrap(BCQEUXF_fake_script)()
+local function ELMYHI_fake_script() -- panel.LocalScript 
 	local script = Instance.new('LocalScript', panel)
 
 	local frame = script.Parent.Parent.panel --in the .frame - you should need to change it what is your frame name.
@@ -1094,4 +1068,4 @@ local function CIRY_fake_script() -- panel.LocalScript
 		end
 	end)
 end
-coroutine.wrap(CIRY_fake_script)()
+coroutine.wrap(ELMYHI_fake_script)()
